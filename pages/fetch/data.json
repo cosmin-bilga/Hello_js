@@ -1,0 +1,20 @@
+{
+  "variables": {
+    "description": "Introduction aux variables en JavaScript",
+    "files": [
+      [
+        "Comme en PHP, JavaScript propose plusieurs fonctions.",
+        "Nous en avons deja decouvert quelques une (console.log, queryselector, getElementById, addEventListener, creatElement, appendChild), interessons nous maintenant a fetch()"
+      ],
+      [
+        "fetch() permet d'acceder à une ressource qui peut etre locale ou distante.",
+        "C'est trés utile pour communiquer avec une API ou pour lire un fichier json comme c'est le cas ici."
+      ],
+      [
+        "Puisque JavaScript ne peut pas se permettre d'attendre (cela bloquerait toute l'interface utilisateur !), fetch() ne renvoie pas directement les données. Il renvoie une Promesse (un engagement).",
+        "Une Promesse est un objet qui garantit que l'opération se terminera un jour, avec un succès ou un échec.",
+        "Voyons cela dans le script de cette page (./pages/fetch.script.js)."
+      ]
+    ]
+  }
+}

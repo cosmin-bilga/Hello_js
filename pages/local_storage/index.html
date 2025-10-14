@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Le Local Storage</h1>
+    <p>
+      Le Local Storage est une fonctionnalité du navigateur qui permet de
+      stocker des données sous forme de paires clé/valeur.
+    </p>
+    <p>
+      Contrairement aux cookies, les données stockées dans le Local Storage ne
+      sont pas envoyées au serveur avec chaque requête HTTP, ce qui améliore les
+      performances.
+    </p>
+    <p>
+      Le Local Storage est persistant, ce qui signifie que les données restent
+      disponibles même après la fermeture du navigateur ou le redémarrage de
+      l'ordinateur.
+    </p>
+    <p>
+      Le Local Storage est limité en taille (généralement autour de 5 Mo par
+      domaine), mais il est suffisant pour stocker des données utilisateur, des
+      préférences, ou des informations temporaires.
+    </p>
+    <p>
+      Le Local Storage est accessible via l'objet JavaScript
+      <code>localStorage</code>, qui fournit des méthodes pour ajouter,
+      récupérer, supprimer et gérer les données stockées.
+    </p>
+    <p>
+      Voici quelques méthodes courantes de l'objet <code>localStorage</code> :
+    </p>
+    <ul>
+      <li>
+        <code>setItem(clé, valeur)</code> : Ajoute une paire clé/valeur au Local
+        Storage.
+      </li>
+      <li>
+        <code>getItem(clé)</code> : Récupère la valeur associée à une clé
+        spécifique.
+      </li>
+      <li>
+        <code>removeItem(clé)</code> : Supprime la paire clé/valeur associée à
+        une clé spécifique.
+      </li>
+      <li>
+        <code>clear()</code> : Supprime toutes les paires clé/valeur du Local
+        Storage.
+      </li>
+      <li><code>key(index)</code> : Récupère la clé à l'index spécifié.</li>
+      <li>
+        <code>length</code> : Propriété qui retourne le nombre de paires
+        clé/valeur stockées.
+      </li>
+    </ul>
+    <h2>Exemple d'utilisation du Local Storage :</h2>
+    <p>Ajouter une valeur :</p>
+    <code> localStorage.setItem('nom', 'Alice'); </code>
+    <p>Récupérer une valeur :</p>
+    <code> const nom = localStorage.getItem('nom'); console.log(nom); </code>
+    <p>Supprimer une valeur</p>
+    <code> localStorage.removeItem('nom'); </code>
+    <p>Vérifier si une clé existe</p>
+    <code>
+      if (localStorage.getItem('nom')) { console.log('Nom trouvé'); } else {
+      console.log('Nom non trouvé'); }
+    </code>
+    <p>Vider le Local Storage</p>
+    <code> localStorage.clear(); </code>
+    <span
+      >Appuyez sur f12 pour consulter le localStorage dans l'onglet
+      "stockage".</span
+    >
+
+    <a href="../classes/index.html">Ajout de classes</a>
+  </body>
+</html>

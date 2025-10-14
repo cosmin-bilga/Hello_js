@@ -1,0 +1,38 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 10svh;
+}
+
+.code,
+.resultat {
+  margin: auto;
+  background-color: black;
+  color: lightgreen;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  margin-top: 10svh;
+}
+.code code,
+.resultat code {
+  margin: 1vw;
+  min-height: 10svh;
+}
+
+#app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 40svh;
+  margin-bottom: 10svh;
+}
+#app section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 45vw;
+}/*# sourceMappingURL=style.css.map */

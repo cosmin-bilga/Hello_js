@@ -1,0 +1,36 @@
+code {
+  margin: auto;
+  background-color: black;
+  color: lightgreen;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  margin: 1vw;
+}
+span {
+  margin: 5vw 0vw 5vw 2vw;
+}
+.action {
+  background-color: black;
+  width: 10vw;
+  height: 10vw;
+  margin: auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  transition: all 0.3s ease;
+}
+.after {
+  background: #90ee90;
+  background: radial-gradient(
+    circle,
+    rgba(144, 238, 144, 1) 0%,
+    rgba(252, 70, 107, 0) 100%
+  );
+  width: 30vw;
+  height: 30vw;
+  border-radius: 100%;
+  box-shadow: 2vw 2vw 2vw rgba(0, 0, 0, 0.363);
+}
+button {
+  margin-bottom: 5vw;
+}

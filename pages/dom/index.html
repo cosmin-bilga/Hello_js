@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulation du DOM</title>
+    <!-- Cette fois ci on importe le script dans le head avec l'attribut defer
+       pour l'executer apres le chargement de la page -->
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
+  <body>
+    <h1>Manipulation du Dom</h1>
+    <div id="app" style="display: flex; flex-direction: column">
+      <!-- Le contenu sera ajouté par le script
+       Consultez maintenant dom.js -->
+    </div>
+    <button id="changeContent">Mettre à jour la variable</button>
+    <br />
+    <div id="majDom" style="display: none">
+      <span>
+        Mais rien n'a changé! pourquoi? Il faut maintenant repercuter ce
+        changement sur le DOM.
+      </span>
+      <span>Ouvrez le fichier dom.html</span>
+      <button id="majDomButton">Mettre à jour le DOM</button>
+    </div>
+
+    <br />
+    <br />
+    <a href="../variables/index.html"> Variables en JavaScript </a>
+  </body>
+</html>

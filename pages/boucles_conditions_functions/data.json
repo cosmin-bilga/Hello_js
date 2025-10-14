@@ -1,0 +1,105 @@
+{
+  "boucles": {
+    "code": [
+      [
+        "for (let i = 0; i < 5; i++) { console.log(i); }",
+        "// Boucle classique for — utile quand on connait le nombre d'itérations."
+      ],
+      [
+        "let i = 0; while (i < 5) { console.log(i); i++; }",
+        "// while — condition évaluée avant chaque itération."
+      ],
+      [
+        "let j = 0; do { console.log(j); j++; } while (j < 5);",
+        "// do...while — exécute au moins une fois, condition évaluée après."
+      ],
+      [
+        "const arr = [10,20,30]; for (const v of arr) { console.log(v); }",
+        "// for...of — itère sur les valeurs d'un itérable (tableaux, strings, etc.)."
+      ],
+      [
+        "const arr = [1,2,3]; const doubled = arr.map(n => n * 2); console.log(doubled);",
+        "// map — crée un nouveau tableau en appliquant une fonction à chaque élément; ne modifie pas l'original."
+      ],
+      [
+        "[1,2,3].forEach(n => console.log(n));",
+        "// forEach — méthode de tableau pour exécuter une fonction pour chaque élément."
+      ]
+    ],
+    "resultat": [
+      ["=> affiche : 0 1 2 3 4 (chaque nombre sur une nouvelle ligne)"],
+      ["=> affiche : 0 1 2 3 4"],
+      ["=> affiche : 0 1 2 3 4"],
+      ["=> affiche : 10 20 30"],
+      ["=> affiche : [2,4,6] (map retourne un nouveau tableau)"],
+      ["=> affiche : 1 2 3"]
+    ]
+  },
+  "conditions": {
+    "code": [
+      [
+        "const x = 10; if (x > 5) { console.log('x est grand'); }",
+        "// if — exécute un bloc seulement si la condition est vraie."
+      ],
+      [
+        "const x = 3; if (x > 5) { console.log('grand'); } else { console.log('petit'); }",
+        "// if...else — choix binaire entre deux branches."
+      ],
+      [
+        "const x = 7; if (x < 5) { console.log('petit'); } else if (x === 7) { console.log('sept'); } else { console.log('autre'); }",
+        "// else if — enchaîne plusieurs tests."
+      ],
+      [
+        "const parity = (x % 2 === 0) ? 'pair' : 'impair'; console.log(parity);",
+        "// opérateur ternaire — expression courte pour if/else qui retourne une valeur."
+      ],
+      [
+        "const a = true, b = false; if (a && b) { console.log('les deux vrais'); } if (a || b) { console.log('au moins un vrai'); }",
+        "// && et || — opérateurs logiques pour combiner conditions."
+      ],
+      [
+        "const color = 'rouge'; switch (color) { case 'rouge': console.log('stop'); break; case 'vert': console.log('go'); break; default: console.log('inconnu'); }",
+        "// switch — utile pour tester une variable contre plusieurs valeurs (souvent plus lisible que de multiples else if)."
+      ]
+    ],
+    "resultat": [
+      ["=> affiche : x est grand"],
+      ["=> affiche : petit"],
+      ["=> affiche : sept"],
+      ["=> affiche : 'pair' ou 'impair' selon la valeur de x"],
+      ["=> affiche : au moins un vrai"],
+      ["=> affiche : stop"]
+    ]
+  },
+  "fonctions": {
+    "code": [
+      [
+        "function add(a, b) { return a + b; } console.log(add(2, 3));",
+        "// Déclaration de fonction."
+      ],
+      [
+        "const mult = function(a, b) { return a * b; }; console.log(mult(2, 3));",
+        "// Une autre syntaxe : expression de fonction anonyme assignée à une variable."
+      ],
+      [
+        "const square = n => n * n; console.log(square(4));",
+        "// Fonction fléchée concise — return implicite pour une seule expression."
+      ],
+      [
+        "const sum = (a, b) => { const r = a + b; return r; }; console.log(sum(1, 2));",
+        "// Fonction fléchée à bloc — utilisez 'return' pour renvoyer une valeur."
+      ],
+      [
+        "function greet(name = 'Inconnu') { console.log('Bonjour ' + name); } greet(); greet('Alice');",
+        "// Paramètres par défaut — utiles pour les valeurs optionnelles."
+      ]
+    ],
+    "resultat": [
+      ["=> affiche : 5"],
+      ["=> affiche : 6"],
+      ["=> affiche : 16"],
+      ["=> affiche : 3"],
+      ["=> affiche : Bonjour Inconnu  Bonjour Alice"]
+    ]
+  }
+}

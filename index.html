@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <button>Je change les couleurs</button>
+    <br />
+    <br />
+    <span
+      >Ouvrez le fichier index.html dans votre IDE pour suivre ce cour.</span
+    >
+    <a href="./pages/console/index.html">La console</a>
+    <link rel="stylesheet" href="./style/style.css" />
+  </body>
+  <!-- Je peut ecrire mon code JavaScript dans une balise script a la fin du body 
+   pour etre sur que le DOM soit charge -->
+  <script>
+    // Sélectionner le bouton et le stocker dans une constante
+    const button = document.querySelector("button");
+    // Ajouter un écouteur d'événement au clic sur le bouton
+    // Il existe de nombreux autres evenements qui peuvent etre ecouter grace a addEvenListener:
+    // saisie au clavier, scroll ...
+    button.addEventListener("click", () => {
+      // Changer la couleur de fond et la couleur du texte du body
+      if (document.body.style.backgroundColor === "black") {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        return;
+      } else {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      }
+    });
+  </script>
+</html>

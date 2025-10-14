@@ -1,0 +1,30 @@
+{
+  "variables": {
+    "description": "Introduction aux variables en JavaScript",
+    "files": [
+      [
+        "sans avoir besoin de le specifier, vos variables (et constante) peuvent etre des integers, des floats, des strings, des booleans, des objets et des tableaux. ",
+        "let a=1",
+        "let b=1.5",
+        "let c=\"je suis une chaine de caractere\"",
+        "let d=true",
+        "let e={nom:\"Doe\", prenom:\"John\"}",
+        "let f=[\"pomme\", \"banane\", \"cerise\"]"
+      ],
+      [
+        "Le format Json est un format de donnee tres utilise en JavaScript. Il permet de representer des objets et des tableaux de maniere simple et lisible.",
+        "Les donnees actuellement utilisees dans cette application sont stockees dans un fichier JSON (cf: data.json)."
+      ],
+      [
+        "Les copies par valeurs:",
+        "let a=1; let b=a (valeure attendu:2)",
+        "a=5; b (reste egale a 2)",
+        "voyez le resultat dans la console et consultez le fichier variables.js"
+      ],
+      [
+        "Les copies par references:",
+        "voyez le resultat dans la console et consultez le fichier variables.js"
+      ]
+    ]
+  }
+}
