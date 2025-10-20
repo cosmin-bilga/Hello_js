@@ -47,10 +47,10 @@ document.getElementById("previous").addEventListener("click", function () {
   if (count <= 0) {
     document.getElementById("previous").style.display = "none";
   } else {
-    document.getElementById("next").style.display = "inline-block";
+    document.getElementById("previous").style.display = "inline-block";
   }
-  if (count > jsonData.variables.files.length - 1) {
-    document.getElementById("previous").style.display = "none";
+  if (count >= jsonData.variables.files.length - 1) {
+    document.getElementById("next").style.display = "none";
   } else {
     document.getElementById("next").style.display = "inline-block";
   }
